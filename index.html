@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jackson web portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="fanta.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+        <header>
+                <a href="https://github.com/funiJackson">Jackson Z</a>
+                <nav>
+                        <a target="_blank" href="https://github.com/funiJackson"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href="https://github.com/funiJackson"><i class="fa-brands fa-linkedin"></i></a>
+                </nav>
+        </header>
+        <main>
+                <section>
+                        <div class="intro-header">
+                                <h1>¡Hola! I'm Jackson</h1>
+                                <p>Software Developer</p>
+
+                        </div>
+                        <h5 class="intro-discription">
+                                self introduction
+                        </h5>
+                        <div class="link-container">
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:fandizhou00@gmail.com"> Email me</a>
+                                <a target="_blank" href="https://github.com/funiJackson"> Linkedin</a>
+                                <a target="_blank" href="https://github.com/funiJackson"> GitHub</a>
+                        </div>
+                        <div id="play-game">
+                                <button onclick="playGame()">Play game???</button>
+                        </div>
+                        <div style="display: none;" class="color-div">
+                                <h4>Pick a color</h4>
+                                <p style="display: none;">Great...now it's ruined!</p>
+                                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+                                <button style="display: none;" onclick="resetColor()" >Reset</button>
+
+                        </div>
+                </section>
+
+                <section>
+                        <h2>Skills</h2>
+                        <table>
+                                <thead>
+                                        <tr>
+                                                <th>Area</th>
+                                                <th>Technilogies</th>
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                                <td>JavaScript</td>
+                                                <td>ReactJS | NodeJS & ExpressJS</td>
+                                        </tr>
+                                        <tr>
+                                                <td>Python</td>
+                                                <td>Data analysis | Data visualization</td>
+                                        </tr>
+                                        <tr>
+                                                <td>Web</td>
+                                                <td>TailwindCSS | FantaCSS | Docker | AWS</td>
+                                        </tr>
+                                        <tr>
+                                                <td>Design</td>
+                                                <td>Canvas | PS  </td>
+                                        </tr>
+                                        <tr>
+                                                <td>Back-End</td>
+                                                <td>Java | Python  </td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                </section>
+
+                <section>
+                        <h2>Latest Projects</h2>
+                        <div class="cards-grid">
+                                <div class="project-card">
+                                       <div>
+                                                <p>Mar 23, 2025</p>
+                                                <h4>30 Days Workout Brogram</h4>
+                                                <div class="tech-list">
+                                                        <div class="card-button-secondary">
+                                                                <p>JavaScript</p>
+                                                        </div>
+                                                        <div class="card-button-secondary">
+                                                                <p>ReactJS</p>
+                                                        </div>
+                                                        <div class="card-button-secondary">
+                                                                <p>FantaCSS</p>
+                                                        </div>
+                                                </div>
+                                                <p>A smart fitness tracker.</p>
+                                                <div class="project-links">
+                                                        <a target="_blank" href="https://jackson-workout-plan.netlify.app/">Live</a>
+                                                        <a target="_blank" href="https://github.com/funiJackson?tab=repositories">GitHub</a>
+                                                </div>
+                                       </div> 
+                                       <div class="ima-div">
+                                                <img class="big-img" src="/web_portfolipo/public/BROGRAM222.png" alt="Jackson-thumbnail">
+                                        </div>
+                                </div>
+
+
+
+                                <div class="project-card">
+                                        <div>
+                                                 <p>Oct 8, 2025</p>
+                                                 <h4>E-store</h4>
+                                                 <div class="tech-list">
+                                                         <div class="card-button-secondary">
+                                                                 <p>NextJs</p>
+                                                         </div>
+                                                         <div class="card-button-secondary">
+                                                                 <p>JavaScript</p>
+                                                         </div>
+                                                         <div class="card-button-secondary">
+                                                                 <p>Stripe & AWS</p>
+                                                         </div>
+                                                 </div>
+                                                 <p>project text disscrption</p>
+                                                 <div class="project-links">
+                                                         <a target="_blank" href="https://github.com/funiJackson/Estore">Live</a>
+                                                         <a target="_blank" href="https://github.com/funiJackson/Estore">GitHub</a>
+                                                 </div>
+                                        </div> 
+                                        <div class="ima-div">
+                                                 <img class="big-img" src="/web_portfolipo/public/eeeeeeeee.png" alt="Jackson-thumbnail">
+                                         </div>
+                                 </div>
+
+
+
+                        
+                                                         
+                                                  
+                </section>
+        </main>
+        <footer>
+                <p>By <a target="_blank" href="https://github.com/funiJackson">Jackson</a>🤩 the repo on <a target="_blank" href="https://github.com/funiJackson">GitHub</a></p>
+        </footer>
+        <script>
+                const body = document.querySelector('body')
+                const colorInput = document.getElementById('color-picker')
+                const colorDiv = document.querySelector('.color-div')
+                const hiddenText = document.querySelector('.color-div p')
+                const resetBtn = document.querySelector('.color-div button')
+                const playBtn = document.getElementById('play-game')
+
+                function playGame(){
+                        colorDiv.style.display = 'block'
+                        playBtn.style.display = 'none'
+                }
+
+                function changeColor(){
+                        const selectedColor = colorInput.value
+                        body.style.background = selectedColor
+                        resetBtn.style.display = 'block'
+                        hiddenText.style.display = 'block'
+                        colorInput.style.display = 'none'
+                }
+
+                function resetColor(){
+                        body.style.background = 'white'
+                        colorInput.style.display = 'block'
+                        playBtn.style.display = 'block'
+
+                        hiddenText.style.display = 'none'
+                        resetBtn.style.display = 'none'
+                        colorDiv.style.display = 'none'
+                        
+                }
+        </script>
+</body>
+</html>
