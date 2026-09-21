@@ -167,7 +167,7 @@ export const PROFILE = {
   name: 'Jackson Zhou Fandi',
   role: 'Product Engineer',
   bio: 'I design it, build it, ship it — and make the AI behave.',
-  email: 'fandizhou00@gmail.com',
+  email: 'C5052054@newcastle.ac.uk',
   github: 'https://github.com/funiJackson',
   linkedin: 'https://www.linkedin.com/in/fandi-zhou-55a259350/',
 }
